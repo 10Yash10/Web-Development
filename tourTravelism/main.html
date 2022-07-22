@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Travelling</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/949b51e5a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img src="" alt="" id="cover">
+    
+    <section class="wrapper">
+      
+        
+        <label for="">Tour Travelling</label>
+        
+        <div class="main">
+            
+            <nav class="left">
+                <ul>
+                    <li><a href="locations.html">Location</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="center">
+                <p id="main-text">Let's Explore the World with more Curosity</p>
+            </div>
+            <div class="right">
+                <input type="email" class="inp">
+                <a href="" class="sign-btn">SignIn</a>
+                <a href="" class="log-btn">LogIn</a>
+            </div>
+        </div>
+        <hr>
+        <div class="location">
+            <div class="left-locat">
+                <h1>Locations And Photos</h1>
+                <p>Best Indian photos and Places to visit on. </p>
+                
+                <h3>Mountain Trip</h3>
+                <p>All the mountain Trip containing tacking,scenery,travelling is included in it</p>
+                <h3>Mandir Trip</h3>
+                <p>Visit all the gread Temple and Mandir</p>
+                
+            </div>
+            <div class="right-locat">
+                <img src="images/pexels-ankur-khandelwal-7111002.jpg" alt="" >
+                <img src="images/pexels-athena-kavis-2423202.jpg" alt="" >
+                <img src="images/pexels-avijit-singh-11578849.jpg" alt="" >
+                <img src="images/pexels-darshak-pandya-574313.jpg" alt="" >
+                <!-- <img src="images/pexels-henlynn-7433983.jpg" alt=""> -->
+                <a href="locations.html">Click for more</a>
+            </div>
+        </div>
+        <hr>
+        <div class="package">
+            <div class="left-pack">
+                <div class="cards">
+                    <h1>Shimla-Manali Tour</h1>
+                    <p>3-Days 2-Night</p>
+                    <p>breakfast and dinner</p>
+                    <p>1 day shylong valley</p>
+                    <p>1 half day manali tour</p>
+                </div>
+                <div class="cards">
+                    <h1>Shimla-Manali Tour</h1>
+                    <p>3-Days 2-Night</p>
+                    <p>breakfast and dinner</p>
+                    <p>1 day shylong valley</p>
+                    <p>1 half day manali tour</p>
+                </div>
+                <div class="cards">
+                    <h1>Shimla-Manali Tour</h1>
+                    <p>3-Days 2-Night</p>
+                    <p>breakfast and dinner</p>
+                    <p>1 day shylong valley</p>
+                    <p>1 half day manali tour</p>
+                </div>
+                <a href="packages.html">Click for more</a>
+
+            </div>
+            <div class="right-pack">
+                <h1>Packages</h1>
+                <p>We have given you best tour packages with all the luxary </p>
+            </div>
+        </div>
+        <hr>
+        <div class="review">
+            <div class="left-rev">
+                <h1>Testemonial and Reviews</h1>
+                <p>Here are some reviews of users they had shared their opinion on how they use our webite and offers for amazing experience</p>
+                <a href="">Click for more</a>
+            </div>
+            <div class="right-rev">
+                <div class="review-1">
+                    <p>"This is best. I can find all the places and best places to stay on"</p>
+                    <p>-Lucifer</p>
+                </div>
+                <div class="review-1">
+                    <p>"This is best. I can find all the places and best places to stay on"</p>
+                    <p>-Lucifer</p>
+                </div>
+                <div class="review-1">
+                    <p>"This is best. I can find all the places and best places to stay on"</p>
+                    <p>-Lucifer</p>
+                </div>
+                <div class="review-1">
+                    <p>"This is best. I can find all the places and best places to stay on"</p>
+                    <p>-Lucifer</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+        <footer class="footer" >
+            <p>This is the original website not a copy right of any other website.   </p>
+            <p>To know about our owner click the below link</p>
+            <div class="social">
+            <ul>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+            <p>visit us on </p>
+            <p>terms</p>
+            <p>services</p>
+            <p>security</p>
+            <p>blog</p>
+            </div>
+        </footer>
+    </section>
+    <script type="text/javascript">
+        let image = document.getElementById("cover");
+        let images = ['pexels-eberhard-grossgasteiger-640781.jpg','pexels-eberhard-grossgasteiger-1367192.jpg','pexels-eberhard-grossgasteiger-1421903.jpg','pexels-fabian-reitmeier-707915.jpg','pexels-ray-bilcliff-20553891.jpg','pexels-roberto-shumski-1903702.jpg','pexels-sergio-souza-3907936.jpg','pexels-sonu-sonkar-2014806.jpg','pexels-stephan-seeber-1261728.jpg'];
+        setInterval(function(){
+            let random = Math.floor(Math.random() * 9);
+            image.src = images[random]
+        },2000);
+
+        let txt = document.getElementById("main-text");
+        let txts = ["Let's Explore the World with more Curosity","Travelling makes Fun","Life is too short to waste on staying at home","i LOVE Travelling","Enjoy in Nature"];
+        setInterval(function(){
+            let rand = Math.floor(Math.random() * 5);
+            txt.src = txts[rand]
+        },2000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+main{
+    background-color: rgb(36, 36, 36);
+    background-image:linear-gradient(rgba(161, 153, 153, 0.2),rgba(255, 255, 255, 0.8));
+    background-position: center;
+    background-size: cover;
+}
+::-webkit-scrollbar{
+    width:10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color:black;
+    box-shadow:inset 0 0 10 wheat;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background:rgb(136, 133, 133);
+}
+
+.center-center{
+    position:relative;
+    left:6.9%;
+}
+
+.menu {
+    margin-left:30%;
+    display: flex;
+  }
+  
+  .menu button {
+    background-color:black;
+    color:wheat;
+    width:10em;
+    height: 2em;
+    border-radius: 100px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .button_active {
+    /* background-color: grey; */
+    color: black;
+  }
+  
+  .content_inside {
+    height:73vh;
+    width:75vw;
+    display: none;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-x:scroll;
+    
+  }
+  .content_inside img{
+      height: 700px;
+      width:1100px;
+  }
+  .content_inside label{
+    text-align: center;
+  }
+  
+  .content_inside_active {
+    display: block;
+  }
+.navig-1{
+    height:20vh;
+    background-color: rgb(30, 30, 30);
+    display:flex;  
+    align-items: center;
+    justify-content:center;
+    
+}
+.navig-1 p{
+    font-size: 100px;
+    color:wheat;
+    font-style:bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+.body{
+    display:flex;
+    /* background-color: blue; */
+    height:80;
+}
+.body .left{
+    /* background-color: green; */
+    /* height:100vh;
+    width:20rem; */
+    height:80vh;
+    width:15vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.body .left p{
+    font-size: 2rem;
+    position: relative;
+    top:-272px;
+}
+.body .left ul li{
+    margin-top:20px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+.body .left ul li a{
+    text-decoration: none;
+    color:wheat;
+    font-size: 30px;
+    
+}
+
+.body .center{
+    background:linear-gradient(rgba(128, 128, 128,.2),rgba(128, 128, 128,.8));
+}   
+body .center .navig-2{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width:90vw;
+    background:linear-gradient(rgba(128, 128, 128,.2),rgba(128, 128, 128,.8));
+}
+.body .center .navig-2 ul{
+    display:flex;
+}
+.body .center .navig-2 ul li{
+    margin-left:30px;
+}

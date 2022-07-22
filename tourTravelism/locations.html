@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>locations</title>
+    <link rel="stylesheet" href="locations.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="navig-1">
+                <p>Tour Travelling</p>
+            </div>
+        </nav>
+        <section class="body">
+            <div class="left">
+                
+                <ul>
+                    <li><a href="main.html" >Home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                </ul>
+            </div>
+            <!-- <div class="center"> -->
+                    <div class="center-center">
+                        <div class="container">
+                            <div class="menu">
+                                <button class="button_active">Photos</button>
+                                <button>Hotels</button>
+                                <button>image 3</button>
+                            </div>
+                            <div class="content">
+                                <div class="content_inside content_inside_active">
+                                        <img src="images/pexels-ankur-khandelwal-7111002.jpg" alt="">
+                                        <label>Golden Temple</label>
+                                        <img src="images/pexels-athena-kavis-2423202.jpg" alt="">
+                                        <img src="images/pexels-avijit-singh-11578849.jpg" alt="">
+                                        <img src="images/pexels-darshak-pandya-574313.jpg" alt="">
+                                        <img src="images/pexels-henlynn-7433983.jpg" alt="">
+                                        <img src="images/pexels-mayur-rawte-1583244.jpg" alt="">
+                                        <img src="images/pexels-nav-photography-5499905.jpg" alt="">
+                                        <img src="images/pexels-pixabay-161239.jpg" alt="">
+                                        <img src="images/pexels-sangeet-rao-11609027.jpg" alt="">
+                                        <img src="images/pexels-som-395944.jpg" alt="">
+                                </div>
+                                <div class="content_inside">
+                                    <img src="hotels/pexels-debendra-das-5373680.jpg" alt="">
+                                    <img src="hotels/pexels-jess-loiterton-5007277.jpg" alt="">
+                                    <img src="hotels/pexels-jess-loiterton-5007455.jpg" alt="">
+                                    <img src="hotels/pexels-roxanne-shewchuk-2404422.jpg" alt="">
+                                </div>
+                                <div class="content_inside">
+                                    <img src="pexels-sonu-sonkar-2014806.jpg" alt="">
+                                </div>
+                            </div>    
+                    <!-- </div> -->
+                </nav>
+                
+            </div>
+        </section>
+    </main>
+    <script >      
+        let button = document.querySelectorAll('.menu button');
+        let content_inside = document.querySelectorAll('.content_inside');
+        
+        Array.from(button).forEach(function(buttonArray, i) {
+        buttonArray.addEventListener('click', function() {
+        
+            Array.from(button).forEach(buttonAll => buttonAll.classList.remove('button_active'));
+            
+            Array.from(content_inside).forEach(content_insideAll => content_insideAll.classList.remove('content_inside_active'));
+            
+            button[i].classList.add('button_active'); 
+            
+            content_inside[i].classList.add('content_inside_active');  
+          });
+        });
+    </script>
+</body>
+</html>

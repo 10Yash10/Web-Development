@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        main{
+            display:flex;
+            flex-wrap: wrap;
+            background:linear-gradient(rgba(53, 53, 53,.2),rgba(53,53,53,.7));
+            justify-content: center;
+            height:max-content;   
+        }
+        .package-navig{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(30, 30, 30);
+            height:5rem;
+            width:100vw;
+        }
+        .package-navig ul{
+            display:flex;
+        }
+        .package-navig ul li{
+            color:white;
+            display: flex;
+            margin:30px;
+            list-style: none;
+        }
+        .package-navig ul li a{
+            color:wheat;
+            font-size:20px;
+            font-weight: bold;
+            text-decoration: NONE;
+        }
+        .package-navig ul li .active{
+            border:2px solid ;
+            width:5em;
+            border-radius: 10px;
+            display:flex;
+            justify-content: center;
+            color:black;
+            background-color: wheat;
+            text-decoration: underline;
+        }
+        .package-cards{
+            background:linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.7));
+            height:20rem;
+            width:30rem;
+            margin:10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+        }
+        .package-cards .card-heading{
+            position:relative;
+            display:flex;
+            flex-shrink:1;
+            top:0px;
+        }
+        .package-cards .card-heading h3{
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: underline;
+        }
+        .package-cards .card-body{
+            position:relative;
+            top:30%;
+            
+        }
+        .package-cards .card-body p{
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .package-cards .card-btn{
+            position:relative;
+            bottom:-40%;
+            background-color: grey;
+            border:2px solid black;
+            border-radius: 20px;
+            padding:7px;
+        }
+        .package-cards .card-btn a{
+            color:black;
+            text-decoration:none;
+        }
+        footer p{
+            font-style: italic;
+            font-stretch: normal;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav class="package-navig">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="" class="active">All</a></li>
+                <li><a href="single.html" id="filter-single">Single</a></li>
+                <li><a href="couple.html">Couple</a></li>
+            </ul>
+        </nav>
+        <section class="package-cards">
+            <div class="card-heading">
+                <h3>2 Day 3 Night Shimla-Manali Trip</h3>
+            </div>
+            <div class="card-body">
+                <p>1 room </p>
+                <p>breakfast</p>
+                <p>1 half day shaylong valley</p>
+                <p>1 full day manali tour</p>
+            </div>
+            <div class="card-btn">
+                <a href="book.html" target="_blank">Book Now</a>
+            </div>
+        </section>
+        <section class="package-cards">
+            <div class="card-heading">
+                <h3>2 Day 3 Night Shimla-Manali Trip</h3>
+            </div>
+            <div class="card-body">
+                <p>1 room </p>
+                <p>breakfast</p>
+                <p>1 half day shaylong valley</p>
+                <p>1 full day manali tour</p>
+            </div>
+            <div class="card-btn">
+                <a href="book.html" target="_blank">Book Now</a>
+            </div>
+        </section>
+        <section class="package-cards">
+            <div class="card-heading">
+                <h3>2 Day 3 Night Shimla-Manali Trip</h3>
+            </div>
+            <div class="card-body">
+                <p>1 room </p>
+                <p>breakfast</p>
+                <p>1 half day shaylong valley</p>
+                <p>1 full day manali tour</p>
+            </div>
+            <div class="card-btn">
+                <a href="book.html" target="_blank">Book Now</a>
+            </div>
+        </section>
+        <section class="package-cards">
+            <div class="card-heading">
+                <h3>2 Day 3 Night Shimla-Manali Trip</h3>
+            </div>
+            <div class="card-body">
+                <p>1 room </p>
+                <p>breakfast</p>
+                <p>1 half day shaylong valley</p>
+                <p>1 full day manali tour</p>
+            </div>
+            <div class="card-btn">
+                <a href="book.html" target="_blank">Book Now</a>
+            </div>
+        </section>
+        <section class="package-cards">
+            <div class="card-heading">
+                <h3>2 Day 3 Night Shimla-Manali Trip</h3>
+            </div>
+            <div class="card-body"> 
+                <p>1 room </p>
+                <p>breakfast</p>
+                <p>1 half day shaylong valley</p>
+                <p>1 full day manali tour</p>
+            </div>
+            <div class="card-btn">
+                <a href="book.html" target="_blank">Book Now</a>
+            </div>
+        </section>     
+        <footer>
+            <P>This is the package block and here the content is not copy right by any other website.</P>
+            <p>The idea is original.</p>
+        </footer>       
+    </main>
+    <script>
+        let sin = document.getElementById("filter-single");
+            
+    </script>
+</body>
+</html>
